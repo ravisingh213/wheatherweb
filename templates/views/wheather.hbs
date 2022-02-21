@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>link}}
+</head>
+<body>
+    {{>header}}
+    <div class="containerwheather">
+        <div class="formwheather">
+            <form >
+                <input type="text" placeholder="enter city name" id="input">
+                <input type="submit" value="enter" id="btn">
+            </form>
+        </div>
+        <div id="output">
+            <p id="msg">show output here</p>
+            <p id="city">PUNE,IN</p>
+            <h1 id="temprature"><span id="temp">22</span> <sup>0</sup>C</h1>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="js/main.js"></script>
+</body>
+</html>
