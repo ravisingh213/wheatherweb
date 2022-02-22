@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require("path");
 const hbs = require("hbs");
+const port = process.env.PORT || 3000
 
 // serve static file
 let staticpath = path.join(__dirname,"../public");
@@ -35,4 +36,4 @@ app.get('*',(req,res)=>{
     res.render("404");
 })
 
-app.listen(3000,'127.0.0.1');
+app.listen(port);
