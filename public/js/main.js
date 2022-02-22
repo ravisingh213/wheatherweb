@@ -17,7 +17,7 @@ btn.addEventListener('click', async (event)=>{
     }
     else{
         try{
-            let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${inputval}&units=metric&appid=c8ddd3a82b35c86ca7028c08c49f66f9`);
+            let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputval}&units=metric&appid=c8ddd3a82b35c86ca7028c08c49f66f9`);
             let objdata = await response.json();
             // console.log(objdata)
             let city = document.getElementById('city');
